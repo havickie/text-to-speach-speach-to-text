@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0; 
+}
+
+:root {
+ --textcolor: black;
+ --accentcolor: #269;
+ --lightaccentcolor: #9df;
+ --reversecolor: #fff;
+}
+
+html {
+ font-size: 16px;
+ font-family: Trebuchet, sans-serif;
+ scroll-behavior: smooth;
+}
+
+body {
+ background: #ececec;
+ margin: 0;
+ padding: 0;
+ line-height: 1.5;
+}
+
+ h1 {
+ color: #152332;
+}
+
+.hero {
+ color: #2d3f52;
+}
+
+.leftdiv {
+padding-right:.2rem;
+}
+.t{
+ margin-top: 2rem;
+}
+.mt {
+ margin-top: 8.5rem;
+}
+@media only screen and (max-width: 767px) {
+ .t div{
+ margin-top: .5rem;
+}
+.mt {
+ margin-top: 3rem;
+}
+}
+
+button {
+ cursor: pointer;
+ padding: 10px;
+ font-weight: 500;
+ font-size: 17px;
+}
+
+.btnlight {
+ color: #2d3f52;
+ text-align: center;
+
+ background-color: transparent;
+ border: 1px solid;
+ transition: 0.5s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btndark {
+ color: white;
+ background-color: #17293d;
+ border-color: #17293d;
+}
+
+.logo {
+ width: 100%;
+ height: 2.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+ .logo {
+  width: 100%;
+  height: 1.9rem;
+ }
+}
+
+strong,
+b {
+ font-weight: bold;
+}
+.text{
+ color: #ececec;
+}
+.wrapper {
+ color: #ececec;
+ padding: 1.2rem;
+ width: 100%;
+ height: auto;
+ min-width: 320px;
+ max-width: 960px;
+ background-color: #152332;
+ color: #ececec;
+ text-align: left;
+ border: 2px solid var(--accentcolor);
+ box-shadow: 4px 4px 16px rgb(159, 159, 159);
+}
+
+h1 {
+ font-size: 4rem;
+ margin: 0;
+}
+p{
+ font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+h1 {
+ font-size: 3rem;
+ margin: 0;
+}
+}
+@media only screen and (max-width: 500px) {
+h1 {
+ font-size: 2rem;
+ margin: 0;
+}
+}
+
+h2 {
+ font-size: 1.5rem;
+ margin: 0 0 0 0;
+}
+
+p {
+ font-size: 1.2rem;
+ margin: 1rem 0 1rem 0;
+}
+
+a:link,
+a:visited {
+ color: var(--accentcolor);
+}
+
+a:hover {
+ text-decoration: none;
+}
+textarea{
+ color:#152332;
+ background: white;
+ background-color: white;
+}
+
+#rateFld {
+ font-size: 1.2rem;
+ width: 4rem;
+ text-align: center;
+ padding: 0;
+ margin: 0 0 0 4px;
+}
+
+#txtFld {
+ width: 100%;
+ font-size: 1.3rem;
+ font-family: inherit;
+ font-weight: 500;
+    padding: 12px 20px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+button{
+ font-size: 19px;
+ background-color: #269;
+ color: #ececec;
+margin:10px 0;
+border-radius: 3px;
+border: transparent;
+}
+.stop{
+ background-color: #868c96;
+}
+
+button:disabled,
+select:disabled {
+ cursor: not-allowed;
+ opacity: 0.3;
+}
+
+select {
+
+ background-color: #152332;
+padding: 1rem 2rem;
+
+ color:white ;
+ width: 100%;
+ font-size: inherit;
+ font-weight: normal;
+ text-align: center;
+ height: auto;
+ border-radius: 8px;
+ border: transparent;
+ /* margin: 10px 0; */
+ display: flex;
+justify-content: center;
+}
+select:active,
+select:focus{
+outline: none;
+border: none;
+}
+
+
+.uiunit {
+ border: 1px solid white;
+ display: inline-block;
+ margin: 1rem 0 ;
+ text-align: left;
+}
+.speed{
+padding: .6rem 1rem;
+}
+
+#warning {
+ color: red;
+ font-size: 1.4rem;
+ display: none;
+}
+
+/* footer */
+footer{
+ margin-top: 5rem ;
+}
+@media screen and (max-width: 910px) {
+  .heading {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .map-responsive {
+    padding-bottom: 56.25%;
+  }
+}
+
+.contact-area {
+  padding: 10px 0;
+  /* min-height: 100vh;*/
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-area {
+  border-bottom: 1px solid #353c46;
+}
+
+.contact-social {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-social > ul {
+  display: inline-flex;
+}
+
+.contact-social ul li a {
+  border: 1px solid #8b9199;
+  color: #8b9199;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  padding-top: 7px;
+  transition: all 0.4s ease 0s;
+  width: 40px;
+}
+
+.contact-social ul li a:hover {
+  border: 1px solid #ee6600;
+  color: #ee6600;
+}
+
+.contact-area,
+footer {
+  background: #152332;
+  color: #868c96;
+}
+
+footer p {
+  padding: 40px 0 ;
+margin: 0;
+  text-align: center; 
+}
+@media screen and (max-width: 500px) {
+ footer p {
+ font-size: 12px;
+}
+}
